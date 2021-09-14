@@ -1,0 +1,33 @@
+body                      { background-color:none!important; background-repeat:repeat; margin:0 40px!important; }
+
+span.main-title           { font:700 16px/18px Roboto, "Helvetica Neue", sans-serif; color:#515151; font-style:italic; }
+span.sub-title            { font:400 14px/16px Roboto, "Helvetica Neue", sans-serif; color:#515151; font-style:italic; }
+.mat-tab-group            { background:#f5f5f5; -webkit-border-radius:8px; border-radius:8px; -webkit-box-shadow:2px 2px 8px 0 rgba(0,0,0,0.15); box-shadow:2px 2px 8px 0 rgba(0,0,0,0.15); margin-bottom:45px; }
+.mat-tab-header           { background:#fff; }
+.mat-tab-nav-bar,
+.mat-tab-header           { border-bottom:none!important; }
+.custom-container                 { margin:2% 2% 0px 2%!important; }
+.mdf-toolbar                      { height:68px!important; }
+.mat-ink-bar                      { height:4px!important; }
+.mat-tab-label.mat-tab-disabled   { border-bottom:solid 4px #fef7f4; }
+.card                             { background-color:transparent; border:none; }
+span.mdf-form-section             { font:500 14px/16px Roboto, "Helvetica Neue", sans-serif; color:#515151; }
+span.mdf-form-sub-section         { font:300 14px/16px Roboto Light, "Helvetica Neue", sans-serif; color:#F16921; }
+.mat-fab .mat-button-wrapper      { padding:0!important; }
+.mat-flat-button.mat-accent,
+.mat-fab.mat-accent,
+.mat-mini-fab.mat-accent          { background-color:#F16921!important; }
+.mat-raised-button.mat-accent     { background-color:#417505!important; }
+.mat-fab                          { width:48px!important; height:48px!important; }
+.cancel-action                    { text-align:left; }
+.button-area                      { border-top:solid 1px #ddd; background-color:#fff; padding:25px 10px!important; border-bottom-left-radius:8px; border-bottom-right-radius:8px; }
+.button-separator                 { margin-right:30px!important; }
+.mat-raised-button                { font:200 14px/16px Roboto, "Helvetica Neue", sans-serif!important; text-transform:uppercase!important; line-height:14px!important; padding:12px 30px!important; min-width:unset!important; }
+.mdf-sub-form                     { border-top:solid 1px #ddd; border-bottom:solid 1px #ddd; background-color:#f5f5f5; padding:10px 0; }
+.mat-dialog-container             { border-radius:8px; }
+.mat-dialog-container .mdf-dialog { padding:0px!important; }
+.mat-dialog-container .custom-container       { margin:0!important; }
+.mat-dialog-container .custom-container h3    { font:500 14px/16px Roboto, "Helvetica Neue", sans-serif; color:#515151; margin:30px 20px; }
+.mdf-form-sub-section-rule                    { border-top:solid 1px #ddd; padding-top:20px; }
+.mdf-mat-card-title                           { font:500 14px/16px Roboto, "Helvetica Neue", sans-serif!important; color:#515151; margin:14px 0 12px!important; }
+.mdf-row                                      { margin:0px!important; }

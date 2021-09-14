@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~angular-notifier/styles/core.scss";
+@import "~angular-notifier/styles/themes/theme-material.scss";
+@import "~angular-notifier/styles/types/type-error.scss";
+@import "~angular-notifier/styles/types/type-success.scss";
+@import "~angular-notifier/styles/types/type-info.scss";
+@import "~angular-notifier/styles/types/type-warning.scss";
+@import "assets/template-modifier/medife-template.scss"; 
+
+html, body                        { height:100%; }
+body                              { margin:0!important; font-family:Roboto, "Helvetica Neue", sans-serif; }
+a,
+a:hover                           { text-decoration:none; }
+a:active                          { color:#593794; }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button  { /* display:none; <- Crashes Chrome on hover */ -webkit-appearance:none;   margin:0; /* <-- Apparently some margin are still there even though it's hidden */ }
+input[type=number]                { -moz-appearance:textfield; /* Firefox */ }
+
+body                                    { font-family:Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif!important; font-weight:200; }
