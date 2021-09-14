@@ -1,0 +1,23 @@
+<form [formGroup]="inputsForm" id="inputsForm">
+  <mat-form-field class="col-md-12">
+    <ngx-mat-file-input [matTooltip]="this.archivoSeleccionado ? this.archivoSeleccionado.name : ' '" type="file"  id="fileInput" lang="es"
+        (change)="selectFile($event, false)" accept=".pdf, .txt, .jpg, .jpeg, .doc, .docx, .png, .xls, .xlsx, .zip, .rar" #inputFile
+        formControlName="basicfile" [placeholder]=" archivoSeleccionado ? modifiableVoucher ? archivoSeleccionado.name : ' ' : placeholderText">
+    </ngx-mat-file-input>
+    <mat-icon matSuffix [ngStyle]="pointer">folder</mat-icon>
+    <mat-error id="mensajeErrorArchivoRequerido">* Es requerido cargar un archivo.</mat-error>
+  </mat-form-field>
+  <mat-form-field class="col-md-12" id="inputDesplegable">
+    <mat-label>Estado</mat-label>
+    <mat-select formControlName="estado" id="inputDesplegableSelect">
+      <mat-option *ngFor="let estado of estados" [value]="estado.id"> {{ estado.description }} </mat-option>
+    </mat-select>
+    <mat-error id="mensajeEstadoRequerido">* Este campo es requerido.</mat-error>
+  </mat-form-field>
+  <mat-form-field class="col-md-12" id="importeTotal">
+    <mat-label>Importe total</mat-label>
+    <input matInput maxlength="16" formControlName="total" autocomplete="off"  appTwoDigitsDecimalNumber (ngModelChange)="validateValue('total')" id="totalInput"
+           onkeypress="return (event.charCode >= 48 && event.charCode <= 57) || event.charCode === 44 || event.charCode === 46" (drop)="false" (paste)="false">
+    <mat-error id="mensajeTotalRequerido">* Este campo es requerido.</mat-error>
+  </mat-form-field>
+</form>
